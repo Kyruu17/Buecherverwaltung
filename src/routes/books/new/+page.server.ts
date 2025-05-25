@@ -27,3 +27,4 @@ export const load: PageServerLoad = async () => {
   return { tags };
 };
 
+export const prerender = false;
