@@ -5,6 +5,9 @@ kit: {
 adapter: adapter({
 edge: false,
 split: false
-})
+}),
+ prerender: {
+      handleHttpError: 'warn' // <--- DAS IST DER FIX
+    }
 }
 };
