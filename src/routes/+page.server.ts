@@ -3,9 +3,9 @@ import { error } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
 
 function isValidDate(value: unknown): boolean {
-  return value instanceof Date && !isNaN(value.getTime());
+  const d = new Date(value as string);
+  return !isNaN(d.getTime());
 }
-
 
 export const load: PageServerLoad = async () => {
   try {

@@ -1,7 +1,7 @@
 import type { PageServerLoad } from './$types';
 import { MongoClient } from 'mongodb';
 
-const uri = 'mongodb://127.0.0.1:27017';
+const uri = "mongodb+srv://buivas01:asdf1234@cluster.ftud5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster";
 const client = new MongoClient(uri);
 const dbName = 'leseverwaltung';
 let isConnected = false;

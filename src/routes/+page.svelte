@@ -49,16 +49,19 @@
     {/each}
   </ul>
 
+ {#if $data.tipp}
   <div class="tipp-box">
-  <h2>🎲 Buchtipp</h2>
-  <p>
-    Vielleicht interessiert dich:
-    <br />
-    <strong><a href={`/books/${$data.tipp._id}`}>{$data.tipp.title}</a></strong>
-    <br />
-    von {$data.tipp.author}
-  </p>
-</div>
+    <h2>🎲 Buchtipp</h2>
+    <p>
+      Vielleicht interessiert dich:
+      <br />
+      <strong><a href={`/books/${$data.tipp._id}`}>{$data.tipp.title}</a></strong>
+      <br />
+      von {$data.tipp.author}
+    </p>
+  </div>
+{/if}
+
 
 <style>
   .tipp-box {
